@@ -75,7 +75,7 @@ In this example:
 
 ---
 
-## Core Concepts in OOP
+## Core Concepts in OOP.
 
 Object‑Oriented Programming is built on a few core ideas:
 
