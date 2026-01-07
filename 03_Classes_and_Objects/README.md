@@ -164,5 +164,49 @@ int main() {
     return 0;
 }
 ```
+Here is the detailed explanation regarding Memory Allocation, the Class, and the Constructor, formatted separately as requested.
 
+---
+
+## When is Memory Allocated?
+
+**Memory is allocated when the Object is created.**
+
+### 1. Does a Class take memory?
+
+**No.**
+A Class is just a **blueprint** or a template (like a map of a house). Writing `class Student { ... };` does not occupy any memory in the RAM. It just tells the compiler how the data structure looks.
+
+### 2. When does Memory Allocation happen?
+
+Memory is allocated exactly when you create an instance (an **Object**) of the class.
+
+* **Statement:** `Student s1;`
+* **Action:** The computer finds empty space in the memory (RAM) equal to the size of the variables inside the class and reserves it for `s1`.
+
+### 3. When is the Constructor called?
+
+The Constructor is called **immediately after** the memory has been allocated.
+It is impossible to run a constructor without memory because the constructor's job is to put values *into* that memory.
+
+### The Exact Sequence of Events
+
+When you write this line of code:
+
+```cpp
+Student s1;
+
+```
+
+The computer performs these steps in order:
+
+1. **Memory Allocation:** The system allocates space in RAM for `s1`.
+2. **Constructor Call:** The system calls `Student()` to initialize that allocated memory space.
+3. **Object Ready:** The object is now ready to be used.
+
+### Real-Life Analogy
+
+* **Class:** The **Architect's Plan** (Map) of a house. (Occupies no land).
+* **Object Creation (Memory Allocation):** **Building the house** on a plot of land. (Now it occupies space).
+* **Constructor:** **Interior Decoration** (Setting up furniture). You can only put furniture (values) inside the house *after* the house (memory) is built.
 ---
