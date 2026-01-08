@@ -146,19 +146,11 @@ int main() {
 }
 
 ```
+<br>
 
 ---
 
-## 4. Summary and Technical Comparison
 
-| Feature | Defined INSIDE Class | Defined OUTSIDE Class |
-| --- | --- | --- |
-| **Technical Term** | **Inline Function** | **Standard Function** |
-| **Execution Style** | Compiler copies/pastes code (No Jump). | Program jumps to function memory address. |
-| **Syntax** | Simple, no special symbols. | Requires **Scope Resolution (`::`)**. |
-| **Best For** | Small Getters/Setters (1-2 lines). | Large, complex logic. |
-| **Professional Use** | Used for helpers. | Used for main logic to keep code clean. |
 
-### Key Takeaway for Module 2:
+<br>
 
-A class needs both **Data Members** (to store info) and **Member Functions** (to process info). While data is unique to every object, member functions are code shared by all objects. As a programmer, you choose to define them **Inside** for speed or **Outside** for organization.
